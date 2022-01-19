@@ -16,6 +16,10 @@ router.get('/',ensureGuest, (req,res)=>{
 //@route GET /
 router.get('/dashboard',ensureAuth, (req,res)=>{
     res.render('dashboard')
+    console.log(res.user);
+
 })
 
 module.exports = router;
+
+
